@@ -1,2 +1,2 @@
-# beirdo-can-collect
+# vehicle-can-collect
 Single board CAN collector design
