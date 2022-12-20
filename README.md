@@ -1,2 +1,2 @@
-# vehicle-can-collect
+# vehicle-can-collector
 Single board CAN collector design
