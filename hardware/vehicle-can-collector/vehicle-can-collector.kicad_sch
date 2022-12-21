@@ -6791,6 +6791,11 @@
     (effects (font (size 1.0922 1.0922)) (justify right bottom))
     (uuid 8b081638-8344-49be-91c5-2608d93fb2eb)
   )
+  (text "QWIIC (I2C) connector\nConnect to SparkFun GPS module (I2C Addr 0x10)"
+    (at 356.87 416.56 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 8bcafb9c-e738-457c-82f5-bd3027fe4e6a)
+  )
   (text "Single-Wire CAN Controller" (at 427.99 439.42 0)
     (effects (font (size 1.0922 1.0922)) (justify left bottom))
     (uuid 90fb5ecf-35ff-4572-87f9-1be42ffaa7cf)
