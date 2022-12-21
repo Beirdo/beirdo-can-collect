@@ -11613,7 +11613,7 @@
   (symbol (lib_id "Device:R") (at 373.38 125.73 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 3ef777f2-6669-4a59-9c9c-22e78adeb935)
-    (property "Reference" "R?" (id 0) (at 370.84 128.27 90))
+    (property "Reference" "R61" (id 0) (at 370.84 128.27 90))
     (property "Value" "270" (id 1) (at 375.92 128.27 90))
     (property "Footprint" "" (id 2) (at 373.38 123.952 90)
       (effects (font (size 1.27 1.27)) hide)
@@ -11701,7 +11701,7 @@
   (symbol (lib_id "power:+3V3") (at 195.58 38.1 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 59e98602-d19a-4d9d-a65f-5fd996827f00)
-    (property "Reference" "#PWR?" (id 0) (at 195.58 41.91 0)
+    (property "Reference" "#PWR088" (id 0) (at 195.58 41.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (id 1) (at 195.58 33.02 0))
@@ -11738,7 +11738,7 @@
   (symbol (lib_id "power:+3V3") (at 389.89 387.35 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 5c78bed6-c707-4238-8a81-86476f8ae91a)
-    (property "Reference" "#PWR?" (id 0) (at 389.89 391.16 0)
+    (property "Reference" "#PWR090" (id 0) (at 389.89 391.16 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (id 1) (at 389.89 382.27 0))
@@ -11754,7 +11754,7 @@
   (symbol (lib_id "Device:C") (at 184.15 52.07 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 685d7a49-95c0-4604-a46a-fb3bc5bd3878)
-    (property "Reference" "C?" (id 0) (at 187.96 50.7999 0)
+    (property "Reference" "C22" (id 0) (at 187.96 50.7999 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "C" (id 1) (at 187.96 53.3399 0)
@@ -11808,7 +11808,7 @@
   (symbol (lib_id "Interface_USB:FT2232HL") (at 411.48 123.19 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 802fdeea-eab5-4f34-ad4d-d37d80a9b2a3)
-    (property "Reference" "U?" (id 0) (at 426.9487 66.04 0)
+    (property "Reference" "U12" (id 0) (at 426.9487 66.04 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "FT2232HL" (id 1) (at 426.9487 68.58 0)
@@ -12055,7 +12055,7 @@
   (symbol (lib_id "Device:C") (at 193.04 62.23 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid b6d5dfb0-24c7-43cd-9b20-15faadb175f6)
-    (property "Reference" "C?" (id 0) (at 189.23 60.9599 0)
+    (property "Reference" "C23" (id 0) (at 189.23 60.9599 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "C" (id 1) (at 189.23 63.4999 0)
@@ -12245,7 +12245,7 @@
   (symbol (lib_id "power:GND") (at 184.15 55.88 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid d16175d6-e93f-435e-b1c7-bcd772d3cee7)
-    (property "Reference" "#PWR?" (id 0) (at 184.15 62.23 0)
+    (property "Reference" "#PWR087" (id 0) (at 184.15 62.23 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 184.15 59.69 0))
@@ -12261,7 +12261,7 @@
   (symbol (lib_id "power:GND") (at 389.89 403.86 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid d74c6336-d7dd-494f-8095-0fc57da1646d)
-    (property "Reference" "#PWR?" (id 0) (at 389.89 410.21 0)
+    (property "Reference" "#PWR091" (id 0) (at 389.89 410.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 389.89 408.94 0))
@@ -12277,7 +12277,7 @@
   (symbol (lib_id "SparkFun-Connectors:I2C_STANDARD") (at 377.19 402.59 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid e0ab9c4f-618f-4e11-a69a-a621ed21a122)
-    (property "Reference" "J?" (id 0) (at 379.095 384.81 0))
+    (property "Reference" "J2" (id 0) (at 379.095 384.81 0))
     (property "Value" "I2C_STANDARD" (id 1) (at 379.095 387.35 0))
     (property "Footprint" "Connector_JST:JST_PH_S4B-PH-K_1x04_P2.00mm_Horizontal" (id 2) (at 377.952 398.78 0)
       (effects (font (size 0.508 0.508)) hide)
@@ -12294,7 +12294,7 @@
   (symbol (lib_id "power:GND") (at 195.58 78.74 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid fa9c2881-cb5e-4b76-a953-7e67a694cec1)
-    (property "Reference" "#PWR?" (id 0) (at 195.58 85.09 0)
+    (property "Reference" "#PWR089" (id 0) (at 195.58 85.09 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 195.58 83.82 0))
@@ -12602,20 +12602,20 @@
     (path "/334b77ee-dd9c-491f-9887-9b0e64d90d87"
       (reference "#PWR086") (unit 1) (value "GND") (footprint "")
     )
-    (path "/59e98602-d19a-4d9d-a65f-5fd996827f00"
-      (reference "#PWR?") (unit 1) (value "+3V3") (footprint "")
-    )
-    (path "/5c78bed6-c707-4238-8a81-86476f8ae91a"
-      (reference "#PWR?") (unit 1) (value "+3V3") (footprint "")
-    )
     (path "/d16175d6-e93f-435e-b1c7-bcd772d3cee7"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+      (reference "#PWR087") (unit 1) (value "GND") (footprint "")
     )
-    (path "/d74c6336-d7dd-494f-8095-0fc57da1646d"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    (path "/59e98602-d19a-4d9d-a65f-5fd996827f00"
+      (reference "#PWR088") (unit 1) (value "+3V3") (footprint "")
     )
     (path "/fa9c2881-cb5e-4b76-a953-7e67a694cec1"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+      (reference "#PWR089") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/5c78bed6-c707-4238-8a81-86476f8ae91a"
+      (reference "#PWR090") (unit 1) (value "+3V3") (footprint "")
+    )
+    (path "/d74c6336-d7dd-494f-8095-0fc57da1646d"
+      (reference "#PWR091") (unit 1) (value "GND") (footprint "")
     )
     (path "/00000000-0000-0000-0000-000063ae8b1c"
       (reference "C1") (unit 1) (value "100nF 25V") (footprint "")
@@ -12681,10 +12681,10 @@
       (reference "C21") (unit 1) (value "100nF 25V") (footprint "")
     )
     (path "/685d7a49-95c0-4604-a46a-fb3bc5bd3878"
-      (reference "C?") (unit 1) (value "C") (footprint "")
+      (reference "C22") (unit 1) (value "C") (footprint "")
     )
     (path "/b6d5dfb0-24c7-43cd-9b20-15faadb175f6"
-      (reference "C?") (unit 1) (value "C") (footprint "")
+      (reference "C23") (unit 1) (value "C") (footprint "")
     )
     (path "/435dd551-cb9e-47a1-adf2-b16742698cd2"
       (reference "D1") (unit 1) (value "BZX884B9V1L") (footprint "Diode_SMD:D_0402_1005Metric_Pad0.77x0.64mm_HandSolder")
@@ -12750,7 +12750,7 @@
       (reference "J1") (unit 1) (value "OBDII Connector") (footprint "OBDII")
     )
     (path "/e0ab9c4f-618f-4e11-a69a-a621ed21a122"
-      (reference "J?") (unit 1) (value "I2C_STANDARD") (footprint "Connector_JST:JST_PH_S4B-PH-K_1x04_P2.00mm_Horizontal")
+      (reference "J2") (unit 1) (value "I2C_STANDARD") (footprint "Connector_JST:JST_PH_S4B-PH-K_1x04_P2.00mm_Horizontal")
     )
     (path "/00000000-0000-0000-0000-000063b17a01"
       (reference "Q1") (unit 1) (value "DMG2301L") (footprint "Package_TO_SOT_SMD:SOT-23")
@@ -12990,7 +12990,7 @@
       (reference "R60") (unit 1) (value "10k") (footprint "")
     )
     (path "/3ef777f2-6669-4a59-9c9c-22e78adeb935"
-      (reference "R?") (unit 1) (value "270") (footprint "")
+      (reference "R61") (unit 1) (value "270") (footprint "")
     )
     (path "/aef95ed8-ced2-47f5-948f-5e223b7f48a1"
       (reference "RN1") (unit 1) (value "10k") (footprint "Resistor_THT:R_Array_SIP9")
@@ -13050,7 +13050,7 @@
       (reference "U11") (unit 1) (value "MCP2515-xSO") (footprint "Package_SO:SOIC-18W_7.5x11.6mm_P1.27mm")
     )
     (path "/802fdeea-eab5-4f34-ad4d-d37d80a9b2a3"
-      (reference "U?") (unit 1) (value "FT2232HL") (footprint "Package_QFP:LQFP-64_10x10mm_P0.5mm")
+      (reference "U12") (unit 1) (value "FT2232HL") (footprint "Package_QFP:LQFP-64_10x10mm_P0.5mm")
     )
   )
 )
