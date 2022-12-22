@@ -1,5 +1,5 @@
 *~
 *.bak
 *.swp
-*.sch-bak
+*sch-bak
 arduino-obd-shield*
