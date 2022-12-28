@@ -56,7 +56,7 @@
 
 	sercom3_uart_default: sercom3_uart_default {
 		group1 {
-			pinmux = <PA22D_SERCOM3_PAD0>;
+			pinmux = <PA22C_SERCOM3_PAD0>;
 		};
 		group2 {
 			bias-pull-up;

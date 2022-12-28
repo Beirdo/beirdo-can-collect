@@ -94,8 +94,8 @@
 	status = "okay";
 	compatible = "atmel,sam0-uart";
 	current-speed = <10400>;
-	rxpo = <1>;  /* TODO */
-	txpo = <0>;  /* TODO */
+	rxpo = <2>;
+	txpo = <0>;
 
 	pinctrl-0 = <&sercom0_uart_default>;
 	pinctrl-names = "default";
@@ -105,8 +105,8 @@
 	status = "okay";
 	compatible = "atmel,sam0-uart";
 	current-speed = <10400>;
-	rxpo = <1>;  /* TODO */
-	txpo = <0>;  /* TODO */
+	rxpo = <2>;
+	txpo = <0>;
 
 	pinctrl-0 = <&sercom1_uart_default>;
 	pinctrl-names = "default";
@@ -116,8 +116,8 @@
 	status = "okay";
 	compatible = "atmel,sam0-uart";
 	current-speed = <2000000>;
-	rxpo = <1>;  /* TODO */
-	txpo = <0>;  /* TODO */
+	rxpo = <1>;
+	txpo = <2>;
 
 	pinctrl-0 = <&sercom2_uart_default>;
 	pinctrl-names = "default";
@@ -128,8 +128,8 @@
 	status = "okay";
 	compatible = "atmel,sam0-uart";
 	current-speed = <19200>;
-	rxpo = <1>;  /* TODO */
-	txpo = <0>;  /* TODO */
+	rxpo = <0>;
+	txpo = <1>;
 
 	pinctrl-0 = <&sercom3_uart_default>;
 	pinctrl-names = "default";
@@ -138,8 +138,8 @@
 &sercom4 {
 	status = "okay";
 	compatible = "atmel,sam0-spi";
-	dipo = <0>;	/* TODO */
-	dopo = <2>;	/* TODO */
+	dipo = <3>;
+	dopo = <0>;
 	#address-cells = <1>;
 	#size-cells = <0>;
 
