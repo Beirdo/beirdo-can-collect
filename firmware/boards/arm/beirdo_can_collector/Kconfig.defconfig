@@ -1,0 +1,8 @@
+# Beirdo's Vehicle CAN Collector configuration
+
+# Copyright (c) 2022 Gavin Hurlbut
+# SPDX-License-Identifier: Apache-2.0
+
+config BOARD
+	default "beirdo_can_collector"
+	depends on BOARD_BEIRDO_CAN_COLLECTOR

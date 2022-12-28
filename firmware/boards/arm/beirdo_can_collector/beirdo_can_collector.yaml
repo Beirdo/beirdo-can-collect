@@ -1,0 +1,18 @@
+# Copyright (c) 2022 Gavin Hurlbut
+# SPDX-License-Identifier: Apache-2.0
+identifier: beirdo_can_collector
+name: Beirdo's Vehicle CAN Collector
+type: mcu
+arch: arm
+ram: 32
+flash: 256
+toolchain:
+  - zephyr
+  - gnuarmemb
+  - xtools
+supported:
+  - adc
+  - gpio
+  - i2c
+  - pwm
+  - spi

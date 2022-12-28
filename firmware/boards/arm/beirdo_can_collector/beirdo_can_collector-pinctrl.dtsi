@@ -1,0 +1,84 @@
+/*
+ * Copyright (c) 2022 Gavin Hurlbut
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+#include <dt-bindings/pinctrl/samc21j-pinctrl.h>
+
+&pinctrl {
+
+	pwm_default: pwm_default {
+		group1 {
+			pinmux = <PB30E_TCC0_WO0>,
+                                 <PB31E_TCC0_WO1>;
+		};
+	};
+
+	adc0_default: adc0_default {
+		group1 {
+			pinmux = <PA7B_ADC0_AIN7>;
+		};
+	};
+
+	adc1_default: adc1_default {
+		group1 {
+			pinmux = <PB0B_ADC1_AIN0>;
+		};
+	};
+
+	sercom0_uart_default: sercom0_uart_default {
+		group1 {
+			pinmux = <PA4D_SERCOM0_PAD0>;
+		};
+
+		group2 {
+			pinmux = <PA6D_SERCOM0_PAD2>;
+			bias-pull-up;
+		};
+	};
+
+	sercom1_uart_default: sercom1_uart_default {
+		group1 {
+			pinmux = <PA16C_SERCOM1_PAD0>;
+		};
+	};
+
+	sercom2_uart_default: sercom2_uart_default {
+                hw-flow-control;
+		group1 {
+			pinmux = <PA8D_SERCOM2_PAD0>, <PA11D_SERCOM2_PAD3>;
+		};
+		group2 {
+			bias-pull-up;
+			pinmux = <PA9D_SERCOM2_PAD1>, <PA10D_SERCOM2_PAD2>;
+		};
+	};
+
+	sercom3_uart_default: sercom3_uart_default {
+		group1 {
+			pinmux = <PA22D_SERCOM3_PAD0>;
+		};
+		group2 {
+			bias-pull-up;
+			pinmux = <PA20D_SERCOM3_PAD2>;
+		};
+	};
+
+	sercom4_spi_default: sercom4_spi_default {
+		group1 {
+			pinmux = <PA12D_SERCOM4_PAD0>,
+				 <PA13D_SERCOM4_PAD1>,
+				 <PA14D_SERCOM4_PAD2>,
+				 <PA15D_SERCOM4_PAD3>;
+		};
+	};
+
+	sercom5_i2c_default: sercom5_i2c_default {
+		group1 {
+			bias-pull-up;
+			pinmux = <PB16C_SERCOM5_PAD0>,
+				 <PB17C_SERCOM5_PAD1>;
+		};
+	};
+
+};
