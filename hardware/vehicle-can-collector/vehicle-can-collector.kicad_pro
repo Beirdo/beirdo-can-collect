@@ -319,6 +319,38 @@
     [
       "fc7bb258-97bd-4dfd-a3c0-a2b31a760677",
       ""
+    ],
+    [
+      "bc507c77-87fd-40b2-ab81-a00979b04215",
+      "processor"
+    ],
+    [
+      "2fdb5244-6388-4d2d-9f7b-8c82c3775e9a",
+      "Peripherals"
+    ],
+    [
+      "eea7659b-8140-45b7-acc2-ec4d72a86c2e",
+      "OBDII"
+    ],
+    [
+      "3ca9e7d3-66a4-4c88-ac12-29c096202d32",
+      "Power"
+    ],
+    [
+      "1c45bdae-2d36-4fe3-9346-f939dc253848",
+      "Analog Inputs"
+    ],
+    [
+      "75064eab-f9d5-45c0-940c-11190474e8e5",
+      "CAN Bus"
+    ],
+    [
+      "f0030538-5fc2-44d3-a8a5-2f451e4714c8",
+      "J1850"
+    ],
+    [
+      "ccd295e4-8d99-43d9-9c62-f777a4719dc4",
+      "ISO"
     ]
   ],
   "text_variables": {}
