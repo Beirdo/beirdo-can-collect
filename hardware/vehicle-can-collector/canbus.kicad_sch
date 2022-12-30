@@ -1952,7 +1952,7 @@
       (effects (font (size 1.0922 1.0922)) (justify left) hide)
     )
   )
-  (global_label "~{MS_CAN_EN}_5V" (shape output) (at 269.24 104.14 0) (fields_autoplaced)
+  (global_label "~{MS_CAN_EN_5V}" (shape output) (at 269.24 104.14 0) (fields_autoplaced)
     (effects (font (size 1.0922 1.0922)) (justify left))
     (uuid 049bcc2c-14b8-43b7-a50e-c82431d0be41)
     (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 283.3049 104.0718 0)
