@@ -1,6 +1,5 @@
 (sym_lib_table
-  (lib (name "UltraLibrarian")(type "KiCad")(uri "${KIPRJMOD}/library/UltraLibrarian/ultralibrarian.kicad_sym")(options "")(descr "")(disabled))
+  (lib (name "UltraLibrarian")(type "KiCad")(uri "${KIPRJMOD}/library/UltraLibrarian/ultralibrarian.kicad_sym")(options "")(descr ""))
   (lib (name "SparkFun-Connectors")(type "KiCad")(uri "${KIPRJMOD}/library/Sparkfun/SparkFun-Connectors.kicad_sym")(options "")(descr ""))
   (lib (name "SparkFun-DiscreteSemi")(type "KiCad")(uri "${KIPRJMOD}/library/Sparkfun/SparkFun-DiscreteSemi.kicad_sym")(options "")(descr ""))
-  (lib (name "arduino-obd-shield-rescue")(type "Legacy")(uri "${KIPRJMOD}/arduino-obd-shield-rescue.lib")(options "")(descr ""))
 )

@@ -322,7 +322,7 @@
     ],
     [
       "bc507c77-87fd-40b2-ab81-a00979b04215",
-      "processor"
+      "Processor"
     ],
     [
       "2fdb5244-6388-4d2d-9f7b-8c82c3775e9a",
@@ -351,6 +351,14 @@
     [
       "ccd295e4-8d99-43d9-9c62-f777a4719dc4",
       "ISO"
+    ],
+    [
+      "8c211eb8-b3f1-45ad-865b-847394cbcf71",
+      "Decoupling"
+    ],
+    [
+      "66c42432-b743-4e47-a60d-a1f170b32c3b",
+      "LEDs"
     ]
   ],
   "text_variables": {}

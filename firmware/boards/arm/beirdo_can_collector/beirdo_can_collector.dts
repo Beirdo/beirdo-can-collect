@@ -13,8 +13,8 @@
 	compatible = "beirdo,can_collector", "atmel,samc21j18a", "atmel,samc21";
 
 	chosen {
-		zephyr,console = &sercom2;
-		zephyr,shell-uart = &sercom2;
+		zephyr,console = &sercom0;
+		zephyr,shell-uart = &sercom0;
 		zephyr,sram = &sram0;
 		zephyr,flash = &flash0;
 	};
@@ -93,9 +93,9 @@
 &sercom0 {
 	status = "okay";
 	compatible = "atmel,sam0-uart";
-	current-speed = <10400>;
-	rxpo = <2>;
-	txpo = <0>;
+	current-speed = <2000000>;
+	rxpo = <1>;
+	txpo = <2>;
 
 	pinctrl-0 = <&sercom0_uart_default>;
 	pinctrl-names = "default";
@@ -115,23 +115,23 @@
 &sercom2 {
 	status = "okay";
 	compatible = "atmel,sam0-uart";
-	current-speed = <2000000>;
-	rxpo = <1>;
-	txpo = <2>;
+	current-speed = <19200>;
+	rxpo = <0>;
+	txpo = <1>;
 
 	pinctrl-0 = <&sercom2_uart_default>;
 	pinctrl-names = "default";
 };
 
-
 &sercom3 {
 	status = "okay";
-	compatible = "atmel,sam0-uart";
-	current-speed = <19200>;
-	rxpo = <0>;
-	txpo = <1>;
+	compatible = "atmel,sam0-spi";
+	dipo = <3>;
+	dopo = <0>;
+	#address-cells = <1>;
+	#size-cells = <0>;
 
-	pinctrl-0 = <&sercom3_uart_default>;
+	pinctrl-0 = <&sercom3_spi_default>;
 	pinctrl-names = "default";
 };
 
