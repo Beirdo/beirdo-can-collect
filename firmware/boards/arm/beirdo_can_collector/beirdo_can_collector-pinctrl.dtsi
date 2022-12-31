@@ -6,11 +6,11 @@
 #include <dt-bindings/pinctrl/samc21j-pinctrl.h>
 
 &pinctrl {
-
 	pwm_default: pwm_default {
 		group1 {
 			pinmux = <PB30E_TCC0_WO0>,
-                                 <PB31E_TCC0_WO1>;
+                                 <PB31E_TCC0_WO1>,
+				 <PA28A_EXTINT8>;
 		};
 	};
 
@@ -39,10 +39,10 @@
 
 	sercom1_uart_default: sercom1_uart_default {
 		group1 {
-			pinmux = <PA16C_SERCOM1_PAD0>;
+			pinmux = <PA0D_SERCOM1_PAD0>;
 		};
 		group2 {
-			pinmux = <PA16C_SERCOM0_PAD2>;
+			pinmux = <PA1D_SERCOM1_PAD1>;
 			bias-pull-up;
 		};
 	};
@@ -79,6 +79,7 @@
 		group2 {
 			bias-pull-up;
 			pinmux = <PB10D_SERCOM4_PAD2>,
+				 <PA11A_EXTINT11>;
 		};
 	};
 
@@ -87,6 +88,18 @@
 			bias-pull-up;
 			pinmux = <PB16C_SERCOM5_PAD0>,
 				 <PB17C_SERCOM5_PAD1>;
+		};
+	};
+
+	can0_default: can0_default {
+		group1 {
+			pinmux = <PB22G_CAN0_TX PB23G_CAN0_RX>;
+		};
+	};
+
+	can1_default: can1_default {
+		group1 {
+			pinmux = <PB14G_CAN1_TX PB15G_CAN1_RX>;
 		};
 	};
 

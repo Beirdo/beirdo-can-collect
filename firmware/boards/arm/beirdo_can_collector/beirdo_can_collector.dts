@@ -22,47 +22,68 @@
 	/* These aliases are provided for compatibility with samples */
 	aliases {
 		led0 = &led0;
-		/* pwm-led0 = &pwm_led0; */
-		/* sw0 = &user_button; */
 		i2c-0 = &sercom5;
+		spi-0 = &sercom4;
+		spi-1 = &sercom3;
 	};
 
 	leds {
 		compatible = "gpio-leds";
-		led0: led_0 {
-			gpios = <&portb 01 GPIO_ACTIVE_HIGH>;
+		led0 {
+			gpios = <&portb 01 GPIO_ACTIVE_LOW>;
 			label = "Status LED";
 		};
 
-		led1: led_1 {
+		led1 {
 			gpios = <&portb 02 GPIO_ACTIVE_LOW>;
 			label = "Host Active LED";
 		};
 
-		led2: led_2 {
+		led2 {
 			gpios = <&portb 03 GPIO_ACTIVE_LOW>;
 			label = "OBD Active LED";
 		};
-	};
 
-	pwmleds {
-/*
-		compatible = "pwm-leds";
-		pwm_led0: pwm_led_0 {
-			pwms = <&tcc2 1 PWM_MSEC(20)>;
+		led3 {
+			gpios = <&i2c_gpio1 0 GPIO_ACTIVE_HIGH>;
+			label = "HS CAN Mode";
 		};
-*/
-	};
 
-	buttons {
-/*
-		compatible = "gpio-keys";
-		user_button: button_0 {
-			gpios = <&portb 19 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
-			label = "User Button";
+		led4 {
+			gpios = <&i2c_gpio1 1 GPIO_ACTIVE_HIGH>;
+			label = "MS CAN Mode";
+		};
+
+		led5 {
+			gpios = <&i2c_gpio1 2 GPIO_ACTIVE_HIGH>;
+			label = "SW CAN Mode";
+		};
+
+		led6 {
+			gpios = <&i2c_gpio1 3 GPIO_ACTIVE_HIGH>;
+			label = "J1850 PWM Mode";
+		};
+
+		led7 {
+			gpios = <&i2c_gpio1 4 GPIO_ACTIVE_HIGH>;
+			label = "J1850 VPW Mode";
+		};
+
+		led8 {
+			gpios = <&i2c_gpio1 5 GPIO_ACTIVE_HIGH>;
+			label = "ISO K-Line Mode";
+		};
+
+		led9 {
+			gpios = <&i2c_gpio1 6 GPIO_ACTIVE_HIGH>;
+			label = "ISO K-Line KW2000 Mode";
+		};
+
+		led10 {
+			gpios = <&i2c_gpio1 7 GPIO_ACTIVE_HIGH>;
+			label = "ISO L-Line Mode";
 		};
 	};
-*/
 };
 
 &cpu0 {
@@ -88,6 +109,7 @@
 
 	pinctrl-0 = <&pwm_default>;
 	pinctrl-names = "default";
+	interrupts = <&porta 28 GPIO_INT_EDGE_BOTH>;
 };
 
 &sercom0 {
@@ -105,7 +127,7 @@
 	status = "okay";
 	compatible = "atmel,sam0-uart";
 	current-speed = <10400>;
-	rxpo = <2>;
+	rxpo = <1>;
 	txpo = <0>;
 
 	pinctrl-0 = <&sercom1_uart_default>;
@@ -133,6 +155,20 @@
 
 	pinctrl-0 = <&sercom3_spi_default>;
 	pinctrl-names = "default";
+
+	can2_default: can@0 {
+		compatible = "microchip,mcp2515";
+		spi-max-frequency = <10000000>;
+		int-gpios = <&i2c_gpio0 0 GPIO_ACTIVE_LOW>;
+		reg = <0x0>;
+		osc-frequency = <12000000>;
+		bus-speed = <33000>;
+		sjw = <1>;
+		sample-point = <875>;
+		can-transceiver = {
+			max-bitrate = <100000>;
+		};
+	};
 };
 
 &sercom4 {
@@ -145,6 +181,18 @@
 
 	pinctrl-0 = <&sercom4_spi_default>;
 	pinctrl-names = "default";
+
+	sdhc0: sdhc@0 {
+		compatible = "zephyr,sdhc-spi-slot";
+		spi-max-frequency: <24000000>;
+		reg = <0>;
+		interrupts = <&porta 11 GPIO_ACTIVE_LOW>;
+
+		sd0: sd@0 {
+			compatible = "zephyr,sdmmc-disk";
+			status = "okay";
+		};
+	};
 };
 
 &sercom5 {
@@ -156,7 +204,41 @@
 
 	pinctrl-0 = <&sercom5_i2c_default>;
 	pinctrl-names = "default";
+
+	ic2_gpio0: nxp,pca95xx@0x20 {
+		interrupt-gpios: <&porta 20 GPIO_ACTIVE_LOW>;
+		pinmux = <PA20A_EXTINT14>;
+		ngpios = <8>;
+	};
+
+	i2c_gpio1: nxp,pca95xx@0x21 {
+		ngpios = <8>;
+	};
 };
+
+&can0 {
+	status = "okay";
+	compatible = "atmel,sam0-can";
+	clock-frequency = <500000>;
+	pinctrl-0 = <&can0_default>;
+	pinctrl-names = "default";
+};
+
+&can1 {
+	status = "okay";
+	compatible = "atmel,sam0-can";
+	clock-frequency = <125000>;
+	pinctrl-0 = <&can1_default>;
+	pinctrl-names = "default";
+};
+
+&can2 {
+	status = "okay";
+	compatible = "microchip,mcp2515";
+	pinctrl-0 = <&can2_default>;
+	pinctrl-names = "default";
+};
+
 
 &flash0 {
 	partitions {

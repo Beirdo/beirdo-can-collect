@@ -237,6 +237,12 @@
     (path "/2fdb5244-6388-4d2d-9f7b-8c82c3775e9a/589706ef-f244-46a5-ae98-a21b6b047ecc"
       (reference "#PWR0318") (unit 1) (value "GND") (footprint "")
     )
+    (path "/2fdb5244-6388-4d2d-9f7b-8c82c3775e9a/864d2c88-9530-4234-8fb6-af1c79f78fb6"
+      (reference "#PWR0319") (unit 1) (value "+3V3") (footprint "")
+    )
+    (path "/2fdb5244-6388-4d2d-9f7b-8c82c3775e9a/3a2de537-af9d-42c8-b3f6-cc359d3fe62d"
+      (reference "#PWR0320") (unit 1) (value "GND") (footprint "")
+    )
     (path "/eea7659b-8140-45b7-acc2-ec4d72a86c2e/6877837d-c8df-49c4-9867-826ae1726a14"
       (reference "#PWR0401") (unit 1) (value "GND") (footprint "")
     )
@@ -812,6 +818,9 @@
     )
     (path "/2fdb5244-6388-4d2d-9f7b-8c82c3775e9a/d4bb3a76-70c3-4704-bfcb-a76f3b10f640"
       (reference "J303") (unit 1) (value "I2C_STANDARD") (footprint "Connector_JST:JST_PH_S4B-PH-K_1x04_P2.00mm_Horizontal")
+    )
+    (path "/2fdb5244-6388-4d2d-9f7b-8c82c3775e9a/f9ab9545-60dc-4ff6-a98f-a632528e6268"
+      (reference "J304") (unit 1) (value "M04JST") (footprint "SparkFun-Connectors:1X04-1.5MM_JST")
     )
     (path "/eea7659b-8140-45b7-acc2-ec4d72a86c2e/dcb300e3-9d81-4e07-a878-efaa5da96b17"
       (reference "J401") (unit 1) (value "OBDII Connector") (footprint "SparkFun-Connectors:OBDII")
