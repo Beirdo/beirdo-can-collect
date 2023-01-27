@@ -721,13 +721,13 @@
       (reference "D402") (unit 1) (value "MMBZ27VALT116") (footprint "UltraLibrarian:MMBZ27VALT116")
     )
     (path "/eea7659b-8140-45b7-acc2-ec4d72a86c2e/9cae7dcd-29ae-4fcb-a22d-462761228438"
-      (reference "D403") (unit 1) (value "MMBZ27VCLT1") (footprint "SparkFun-DiscreteSemi:SOT23-3")
+      (reference "D403") (unit 1) (value "MMBZ27VCLT1") (footprint "SparkFun-Silicon-Standard:SOT23-3")
     )
     (path "/eea7659b-8140-45b7-acc2-ec4d72a86c2e/c1ae8636-5a82-4a29-84ca-66c7ca3553c1"
-      (reference "D404") (unit 1) (value "PESD1CAN") (footprint "SparkFun-DiscreteSemi:SOT23-3")
+      (reference "D404") (unit 1) (value "PESD1CAN") (footprint "SparkFun-Silicon-Standard:SOT23-3")
     )
     (path "/eea7659b-8140-45b7-acc2-ec4d72a86c2e/4b8674e9-2d52-4efb-95de-db447a377dd7"
-      (reference "D405") (unit 1) (value "PESD1CAN") (footprint "SparkFun-DiscreteSemi:SOT23-3")
+      (reference "D405") (unit 1) (value "PESD1CAN") (footprint "SparkFun-Silicon-Standard:SOT23-3")
     )
     (path "/3ca9e7d3-66a4-4c88-ac12-29c096202d32/acdc0a6d-dad4-4222-91d0-723a4e6e311d"
       (reference "D501") (unit 1) (value "MBRA340") (footprint "Diode_SMD:D_SMA")
