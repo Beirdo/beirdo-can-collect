@@ -12422,6 +12422,7 @@
   (gr_text "Vehicle CAN Collector v1" (at 161.29 107.315 90) (layer "F.SilkS") (tstamp a53eda4c-fc47-4613-ae7d-7ac3df73fe9a)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
+  (target plus (at 169.545 138.43) (size 5) (width 0.1) (layer "Edge.Cuts") (tstamp 9416e15a-924b-4b17-9896-f0554ec15054))
 
   (segment (start 130.694999 65.3459) (end 130.805775 65.456676) (width 0.25) (layer "F.Cu") (net 1) (tstamp 28a2912c-0ad4-4595-9301-9b5aadb9a41f))
   (segment (start 130.694999 64.0334) (end 130.694999 65.3459) (width 0.25) (layer "F.Cu") (net 1) (tstamp dac8253d-a1cb-4aa5-91a2-2bbbe98b7cd3))
